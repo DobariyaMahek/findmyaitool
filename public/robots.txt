@@ -1,0 +1,8 @@
+# *
+User-agent: *
+Disallow: /
+
+Disallow: /upload/
+
+# Sitemaps
+Sitemap: https://findmyaitool.com/sitemap.xml

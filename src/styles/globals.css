@@ -1,0 +1,237 @@
+html {
+  font-family: "Mulish-Regular";
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish-Regular", Arial, sans-serif;
+  background: #000;
+  min-height: 100vh;
+  background-image: url("/assets/images/docs-right.webp");
+  background-size: cover;
+  background-repeat: repeat;
+  overflow-x: hidden;
+  background-position: 50%;
+  background-attachment: fixed;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width:1440px) {
+  body {
+  background-image: url("/assets/images/desktop-layer.webp");
+  }
+}
+
+@media (max-width:768px) {
+  body {
+  background-image: url("/assets/images/tab-layer.webp");
+  }
+}
+
+@media (max-width:576px) {
+  body {
+  background-image: url("/assets/images/mobile-layer.webp");
+  }
+}
+
+* {
+  font-family: "Mulish-Regular";
+  box-sizing: border-box;
+}
+/* styles/global.css or styles/global.scss */
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../../src/assets/font/Mulish-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../../src/assets/font/Mulish-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Paytone One';
+  src: url('../../src/assets/font/Paytone One.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* You can add other global styles here as well */
+
+img {
+  max-width: 100%;
+}
+
+p:last-child {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  word-break: break-word;
+}
+
+input,
+textarea {
+  font-family: "Mulish-Regular";
+  color: #fff !important;
+}
+
+a {
+  text-decoration: none;
+  word-break: break-word;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232147;
+}
+
+.flatpickr-calendar {
+  background: rgb(7, 6, 35) !important;
+  border: 1px solid rgb(98, 93, 245) !important;
+}
+
+.flatpickr-day {
+  color: #fff !important;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+  color: rgba(255, 255, 255, 0.9) !important;
+  fill: rgba(255, 255, 255, 0.9) !important;
+}
+.flatpickr-current-month {
+  color: #fff !important;
+}
+.flatpickr-monthDropdown-months {
+  color: #fff !important;
+}
+
+.flatpickr-monthDropdown-month {
+  background: rgb(7, 6, 35) !important;
+}
+
+.flatpickr-day.selected {
+  background: rgb(98, 93, 245) !important;
+}
+.flatpickr-day:hover {
+  background: rgb(98, 93, 245) !important;
+}
+.flatpickr-weekday {
+  color: #fff !important;
+}
+
+.flatpickr-day.prevMonthDay {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.flatpickr-day.nextMonthDay {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+.numInputWrapper .arrowUp {
+  background: rgb(98, 93, 245) !important;
+  color: #fff !important;
+}
+
+.numInputWrapper .arrowUp::after {
+  border-bottom-color: #fff !important;
+}
+.numInputWrapper .arrowDown {
+  background: rgb(98, 93, 245) !important;
+  color: #fff !important;
+}
+.numInputWrapper .arrowDown::after {
+  border-top-color: #fff !important;
+}
+
+.blog-table-design {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.blog-table-design::-webkit-scrollbar {
+  height: 6px;
+}
+.blog-table-design::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+}
+
+.table {
+  width: 100% !important;
+  overflow: auto;
+  height: auto !important;
+  margin: 0;
+}
+
+.raw-html-embed {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 40px;
+}
+
+.raw-html-embed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.details-layout {
+  min-height: 100vh;
+}
+.visibleModal {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  opacity: 1;
+  visibility: visible;
+}
+.hiddenModal {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.image-loaded {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-loading {
+  opacity: 0;
+}
+.lazy-load-image-background {
+  height: inherit;
+  width: -webkit-fill-available;
+}
