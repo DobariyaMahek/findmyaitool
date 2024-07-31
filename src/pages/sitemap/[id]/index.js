@@ -1,6 +1,6 @@
 import { getServerSideSitemap } from "next-sitemap";
 const { request, gql } = require("graphql-request");
-export const runtime = "edge";
+export const runtime = "experimental-edge";
 
 const endpoint = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const EXTERNAL_DATA_URL = process.env.NEXT_PUBLIC_SITEMAP_URL;
