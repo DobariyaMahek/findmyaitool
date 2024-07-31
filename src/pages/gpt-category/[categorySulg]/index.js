@@ -1,5 +1,5 @@
 import SubcategoryGpt from "@/module/gptCategory/subcategoryGpt";
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export async function generateMetadata() {
   return {

@@ -1,6 +1,6 @@
 import GptDetails from "@/module/gptDetails";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 export default function index({ seoData }) {
   return <GptDetails seoData={seoData} />;
