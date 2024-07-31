@@ -73,7 +73,6 @@ export default function Toolssection({ categoryToolsDetails, loading }) {
                           key={i}
                         >
                           <div className={styles.boxTopIconBox}>
- 
                             <LazyImage
                               image={{
                                 src: category?.icon,

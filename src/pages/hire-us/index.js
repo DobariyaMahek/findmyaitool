@@ -1,4 +1,3 @@
-
 import HireUsDevelopment from "@/module/hireUsDevelopment";
 
 export default function index() {

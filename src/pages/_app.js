@@ -13,7 +13,7 @@ import { GET_GPT_SEO } from "@/helpers/gptseo";
 import { GET_GPTCATEGORY_SEO } from "@/helpers/gptcategoryseo";
 import { GET_TOOL_SEO } from "@/helpers/toolseo";
 import Wrapper from "@/shared/components/wrapper";
-
+export const runtime = "edge";
 function App({ Component, pageProps, router, seoData }) {
   useEffect(() => {
     if ("serviceWorker" in navigator) {
@@ -23,11 +23,11 @@ function App({ Component, pageProps, router, seoData }) {
         .catch((error) => {});
     }
   }, []);
-    useEffect(() => {
-      const style = document.createElement("style");
-      style.innerHTML = `.spinner { display: none }`;
-      document.documentElement.appendChild(style);
-    }, []);
+  useEffect(() => {
+    const style = document.createElement("style");
+    style.innerHTML = `.spinner { display: none }`;
+    document.documentElement.appendChild(style);
+  }, []);
   return (
     <>
       <MetaSEO seo={seoData} />

@@ -1,7 +1,6 @@
 import { getServerSideSitemap } from "next-sitemap";
 const { request, gql } = require("graphql-request");
 
-
 const endpoint = process.env.NEXT_PUBLIC_STRAPI_API_URL;
 const EXTERNAL_DATA_URL = process.env.NEXT_PUBLIC_SITEMAP_URL;
 
@@ -34,7 +33,7 @@ async function fetchStaticPages() {
   return data?.staticMetatags?.data;
 }
 
-function generateUrls(data, ctx, url='') {
+function generateUrls(data, ctx, url = "") {
   const dat = data.map((item) => ({
     loc: `${EXTERNAL_DATA_URL}/${item.attributes.slug}`,
     lastmod: new Date(item.attributes.updatedAt).toISOString(),
@@ -59,55 +58,58 @@ async function generateStaticSitemap(ctx) {
   const siteMapPath = [
     {
       attributes: {
-        slug: 'sitemap/category.xml',
+        slug: "sitemap/category.xml",
         updatedAt: new Date().toISOString(),
-        show_in_sitemap: true
-      }
+        show_in_sitemap: true,
+      },
     },
     {
       attributes: {
-        slug: 'sitemap/gpt-category.xml',
+        slug: "sitemap/gpt-category.xml",
         updatedAt: new Date().toISOString(),
-        show_in_sitemap: true
-      }
+        show_in_sitemap: true,
+      },
     },
     {
       attributes: {
-        slug: 'sitemap/blog.xml',
+        slug: "sitemap/blog.xml",
         updatedAt: new Date().toISOString(),
-        show_in_sitemap: true
-      }
+        show_in_sitemap: true,
+      },
     },
     {
       attributes: {
-        slug: 'sitemap/tool.xml',
+        slug: "sitemap/tool.xml",
         updatedAt: new Date().toISOString(),
-        show_in_sitemap: true
-      }
+        show_in_sitemap: true,
+      },
     },
     {
       attributes: {
-        slug: 'sitemap/gpt.xml',
+        slug: "sitemap/gpt.xml",
         updatedAt: new Date().toISOString(),
-        show_in_sitemap: true
-      }
-  }]
+        show_in_sitemap: true,
+      },
+    },
+  ];
 
-  const finalRoutes = [ {
-    attributes: {
-      slug: '',
-      updatedAt: new Date().toISOString(),
-      show_in_sitemap: true
-    }
-  }, ...filteredPath, ...siteMapPath]
+  const finalRoutes = [
+    {
+      attributes: {
+        slug: "",
+        updatedAt: new Date().toISOString(),
+        show_in_sitemap: true,
+      },
+    },
+    ...filteredPath,
+    ...siteMapPath,
+  ];
 
   return getServerSideSitemap(ctx, generateUrls(finalRoutes, ctx));
 }
 
 export async function getServerSideProps(ctx) {
-
   return await generateStaticSitemap(ctx);
-  
 }
 
 export default function Site() {}
