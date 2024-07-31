@@ -1,6 +1,6 @@
 import SubCategoryDetails from "@/module/subCategoryDetails";
 import React from "react";
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 export async function generateMetadata() {
   return {
