@@ -1,6 +1,7 @@
-
 import SubCategoryDetails from "@/module/subCategoryDetails";
 import React from "react";
+export const runtime = "edge";
+
 export async function generateMetadata() {
   return {
     title: "Discover Category Lists for Your Business - FindMyAITool ",
@@ -9,7 +10,6 @@ export async function generateMetadata() {
     keywords: "AI Tools Category Lists  ",
   };
 }
-export default function page({seoData}) {
-
+export default function page({ seoData }) {
   return <SubCategoryDetails seoData={seoData} />;
 }

@@ -1,4 +1,5 @@
 import SubcategoryGpt from "@/module/gptCategory/subcategoryGpt";
+export const runtime = "edge";
 
 export async function generateMetadata() {
   return {
@@ -9,5 +10,5 @@ export async function generateMetadata() {
   };
 }
 export default function page(seoData) {
-  return <SubcategoryGpt seoData={seoData}/>;
+  return <SubcategoryGpt seoData={seoData} />;
 }
