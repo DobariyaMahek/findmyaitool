@@ -3,8 +3,8 @@ import NoDataFound from "@/shared/components/404";
 
 export const runtime = "experimental-edge";
 
-const error = () => {
+const Error = () => {
   return <NoDataFound />;
 };
 
-export default error;
+export default Error;
