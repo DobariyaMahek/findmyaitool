@@ -1,6 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import { Fragment } from "react";
-export const runtime = "experimental-edge";
 export default function Document() {
   return (
     <Html lang="en">
