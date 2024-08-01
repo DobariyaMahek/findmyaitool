@@ -10,8 +10,8 @@
     "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
-    "@apollo/client": "^3.9.2",
     "@cloudflare/next-on-pages": "^1.13.1",
+    "@apollo/client": "^3.9.2",
     "@reduxjs/toolkit": "^2.1.0",
     "axios": "^1.6.7",
     "classnames": "^2.5.1",
