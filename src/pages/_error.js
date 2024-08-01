@@ -1,10 +1,9 @@
-import dynamic from "next/dynamic";
-const NoDataFound = dynamic(() => import("../shared/components/404"), {
-  ssr: false,
-});
+import React from "react";
+import NoDataFound from "@/shared/components/404";
+export const runtime = "experimental-edge";
 
-const Custom404 = () => {
+const error = () => {
   return <NoDataFound />;
 };
 
-export default Custom404;
+export default error;
