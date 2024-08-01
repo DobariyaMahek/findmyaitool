@@ -1,10 +1,10 @@
 import React from "react";
 import NoDataFound from "@/shared/components/404";
 
-export const runtime = "experimental-edge";
+export const runtime = "edge"; // Use "edge" instead of "experimental-edge"
 
-const Error = () => {
+const error = () => {
   return <NoDataFound />;
 };
 
-export default Error;
+export default error;
