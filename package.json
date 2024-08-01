@@ -7,9 +7,7 @@
     "build": "next build",
     "start": "next start -p 8090",
     "lint": "next lint",
-    "pages:build": "npx @cloudflare/next-on-pages",
-    "build:cloudflare": "mv pages/_error.edge.js pages/_error.js && next build",
-    "build:vercel": "mv pages/_error.experimental-edge.js pages/_error.js && next build"
+    "pages:build": "npx @cloudflare/next-on-pages"
   },
   "dependencies": {
     "@apollo/client": "^3.9.2",

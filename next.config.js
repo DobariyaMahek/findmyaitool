@@ -7,7 +7,7 @@ const nextConfig = {
     unoptimized: true,
   },
   experimental: {
-    runtime: "experimental-edge",
+    runtime: "edge",
   },
   async headers() {
     return [
