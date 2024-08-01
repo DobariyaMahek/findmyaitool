@@ -1,10 +1,13 @@
-// src/pages/_error.js
-export const runtime = "experimental-edge";
+// pages/_error.js
+
+export const runtime = "experimental-edge"; // or 'edge' depending on the runtime
 
 function ErrorPage({ statusCode }) {
   return (
     <div>
-      <h1>An error occurred: {statusCode}</h1>
+      <h1>
+        {statusCode ? `An error ${statusCode} occurred` : "An error occurred"}
+      </h1>
     </div>
   );
 }
@@ -14,7 +17,7 @@ ErrorPage.getInitialProps = async (ctx) => {
     ? ctx.err.statusCode
     : ctx.res
     ? ctx.res.statusCode
-    : 404;
+    : null;
   return { statusCode };
 };
 
