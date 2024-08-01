@@ -1,5 +1,5 @@
 import BrowseAllGPTs from "@/module/browseAllGPTs";
-export const runtime = "experimental-edge";
+const val = "";
 export default function index() {
   return <BrowseAllGPTs />;
 }

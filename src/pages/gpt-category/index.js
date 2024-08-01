@@ -1,5 +1,5 @@
 import GptCategory from "@/module/gptCategory";
-export const runtime = "experimental-edge";
+const val = "";
 export default function index() {
   return <GptCategory />;
 }

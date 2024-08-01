@@ -1,5 +1,5 @@
 import ContactUs from "@/module/contactUs";
-export const runtime = "experimental-edge";
+const val = "";
 export default function index() {
   return <ContactUs />;
 }

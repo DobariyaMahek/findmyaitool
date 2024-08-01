@@ -1,5 +1,5 @@
 import HireUsDevelopment from "@/module/hireUsDevelopment";
-export const runtime = "experimental-edge";
+const val = "";
 export default function index() {
   return <HireUsDevelopment />;
 }

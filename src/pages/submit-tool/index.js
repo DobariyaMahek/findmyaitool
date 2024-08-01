@@ -1,5 +1,5 @@
 import SubmitAITool from "@/module/submitAITool";
-export const runtime = "experimental-edge";
+const val = "";
 export default function index() {
   return <SubmitAITool />;
 }

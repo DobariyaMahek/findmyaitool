@@ -1,5 +1,5 @@
 import Blogdetails from "@/module/blogdetails";
-export const runtime = "experimental-edge";
+const val = "";
 export default function Page({ seoData }) {
   return <Blogdetails seoData={seoData} />;
 }

@@ -1,5 +1,5 @@
 import HomePage from "@/module/home";
-export const runtime = "experimental-edge";
+const val = "";
 export default function Home({ seoData }) {
   return (
     <>

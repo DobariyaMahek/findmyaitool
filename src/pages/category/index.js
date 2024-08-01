@@ -1,6 +1,6 @@
 import Categoriessection from "@/module/toolscategories/categoriessection";
 import React from "react";
-export const runtime = "experimental-edge";
+const val = "";
 export default function index() {
   return <Categoriessection />;
 }

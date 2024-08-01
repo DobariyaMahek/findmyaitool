@@ -13,7 +13,7 @@ import { GET_GPT_SEO } from "@/helpers/gptseo";
 import { GET_GPTCATEGORY_SEO } from "@/helpers/gptcategoryseo";
 import { GET_TOOL_SEO } from "@/helpers/toolseo";
 import Wrapper from "@/shared/components/wrapper";
-export const runtime = "experimental-edge";
+const val = "";
 function App({ Component, pageProps, router, seoData }) {
   useEffect(() => {
     if ("serviceWorker" in navigator) {
