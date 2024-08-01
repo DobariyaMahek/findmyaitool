@@ -2,12 +2,12 @@
 
 const nextConfig = {
   // output: "export",
+  experimental: {
+    runtime: "experimental-edge",
+  },
   productionBrowserSourceMaps: false,
   images: {
     unoptimized: true,
-  },
-  experimental: {
-    runtime: "edge",
   },
   async headers() {
     return [
