@@ -3,7 +3,7 @@
 const nextConfig = {
   // output: "export",
   experimental: {
-    runtime: "experimental-edge",
+    runtime: "edge",
   },
   productionBrowserSourceMaps: false,
   images: {
