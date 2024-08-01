@@ -1,6 +1,6 @@
 import SubCategoryDetails from "@/module/subCategoryDetails";
 import React from "react";
-
+export const runtime = "experimental-edge";
 export async function generateMetadata() {
   return {
     title: "Discover Category Lists for Your Business - FindMyAITool ",

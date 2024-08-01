@@ -1,5 +1,5 @@
 import SubcategoryGpt from "@/module/gptCategory/subcategoryGpt";
-
+export const runtime = "experimental-edge";
 export async function generateMetadata() {
   return {
     title: "Discover Category Lists for Your Business - FindMyAITool ",
