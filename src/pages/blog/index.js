@@ -1,5 +1,5 @@
 import BlogPage from "@/module/blog";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <BlogPage />;
 }

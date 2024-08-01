@@ -1,5 +1,5 @@
 import PaymentSuccessful from "@/module/paymentSuccessful";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <PaymentSuccessful />;
 }

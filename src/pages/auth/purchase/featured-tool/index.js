@@ -1,5 +1,5 @@
 import Featuredyourtool from "@/module/featuredyourtool";
-const val = "";
+export const runtime = "experimental-edge";
 const page = () => {
   return <Featuredyourtool />;
 };

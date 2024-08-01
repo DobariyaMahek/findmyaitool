@@ -1,5 +1,5 @@
 import GptStore from "@/module/gptStore";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <GptStore />;
 }

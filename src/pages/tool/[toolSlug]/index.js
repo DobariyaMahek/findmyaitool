@@ -1,5 +1,5 @@
 import ToolsDetails from "@/module/toolsdetails";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index({ seoData }) {
   return <ToolsDetails seoData={seoData} />;
 }

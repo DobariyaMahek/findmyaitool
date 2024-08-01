@@ -1,5 +1,5 @@
 import PopularTools from "@/module/populartools/page";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <PopularTools />;
 }

@@ -1,5 +1,5 @@
 import Bookmarked from "@/module/bookmarked";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <Bookmarked />;
 }

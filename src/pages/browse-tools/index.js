@@ -1,5 +1,5 @@
 import AitoolslistPage from "@/module/aitoolslist";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <AitoolslistPage />;
 }

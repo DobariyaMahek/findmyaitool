@@ -1,5 +1,5 @@
 import Aishortvideos from "@/module/aishortvideos";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <Aishortvideos />;
 }

@@ -1,5 +1,5 @@
 import GptBookmark from "@/module/gptbookmark";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <GptBookmark />;
 }

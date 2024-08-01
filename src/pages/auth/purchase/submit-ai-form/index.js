@@ -1,5 +1,5 @@
 import SubmitAiToolsForm from "@/module/submitAIToolForm";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <SubmitAiToolsForm />;
 }

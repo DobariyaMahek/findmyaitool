@@ -1,5 +1,5 @@
 import PrivatePolicy from "@/module/privatePolicy";
-const val = "";
+export const runtime = "experimental-edge";
 export default function index() {
   return <PrivatePolicy />;
 }
