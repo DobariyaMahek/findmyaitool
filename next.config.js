@@ -6,6 +6,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  experimental: {
+    runtime: "experimental-edge",
+  },
   async headers() {
     return [
       // {
