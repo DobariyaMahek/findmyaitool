@@ -2,6 +2,8 @@
 
 const nextConfig = {
   // output: "export",
+  trailingSlash: true,
+  exportTrailingSlash: true,
   experimental: {
     runtime: "experimental-edge",
   },
