@@ -16,21 +16,21 @@ body {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media (max-width: 1440px) {
+@media (max-width:1440px) {
   body {
-    background-image: url("/assets/images/desktop-layer.webp");
+  background-image: url("/assets/images/desktop-layer.webp");
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
   body {
-    background-image: url("/assets/images/tab-layer.webp");
+  background-image: url("/assets/images/tab-layer.webp");
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width:576px) {
   body {
-    background-image: url("/assets/images/mobile-layer.webp");
+  background-image: url("/assets/images/mobile-layer.webp");
   }
 }
 
@@ -41,24 +41,24 @@ body {
 /* styles/global.css or styles/global.scss */
 
 @font-face {
-  font-family: "Mulish";
-  src: url("../../src/assets/font/Mulish-Bold.ttf") format("truetype");
+  font-family: 'Mulish';
+  src: url('../../src/assets/font/Mulish-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Mulish";
-  src: url("../../src/assets/font/Mulish-Regular.ttf") format("truetype");
+  font-family: 'Mulish';
+  src: url('../../src/assets/font/Mulish-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Paytone One";
-  src: url("../../src/assets/font/Paytone One.ttf") format("truetype");
+  font-family: 'Paytone One';
+  src: url('../../src/assets/font/Paytone One.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
