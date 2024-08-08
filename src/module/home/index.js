@@ -18,23 +18,23 @@ export default function Homeindex() {
   const [categoryToolsDetails, setCategoryToolsDetails] = useState({});
   const dispatch = useDispatch();
   const ismobile = window.innerWidth;
-  // useEffect(() => {
-  //   dispatch(setCurrentPage(1));
-  //   dispatch(getHomePageAllDetails())
-  //     .then((respon) => {
-  //       setCategoryToolsDetails(respon?.payload?.payload);
-  //       setTimeout(() => {
-  //         setLoading(false);
-  //       }, 500);
-  //     })
-  //     .catch((err) => {
-  //       setLoading(false);
-  //     });
-  // }, []);
+  useEffect(() => {
+    dispatch(setCurrentPage(1));
+    dispatch(getHomePageAllDetails())
+      .then((respon) => {
+        setCategoryToolsDetails(respon?.payload?.payload);
+        setTimeout(() => {
+          setLoading(false);
+        }, 500);
+      })
+      .catch((err) => {
+        setLoading(false);
+      });
+  }, []);
 
   return (
     <div className={styles.homePageAlignment}>
-      {/* <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<div>Loading...</div>}>
         <Herobanner />
         <CompanyImage />
         <CardSection {...{ categoryToolsDetails }} />
@@ -50,8 +50,7 @@ export default function Homeindex() {
         <Testimonial />
         <Blog />
         <Faqsection />
-      </Suspense> */}
-      <h1>Hello</h1>
+      </Suspense>
     </div>
   );
 }
