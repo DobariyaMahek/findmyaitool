@@ -38,7 +38,12 @@ export default function Homeindex({ seoData }) {
         <Herobanner />
         <CompanyImage />
         <CardSection {...{ categoryToolsDetails }} />
-        {ismobile > 600 && <Trendingaishortsvideo {...{ categoryToolsDetails }} loading={loading} />}
+        {ismobile > 600 && (
+          <Trendingaishortsvideo
+            {...{ categoryToolsDetails }}
+            loading={loading}
+          />
+        )}
         <Toolssection {...{ categoryToolsDetails }} loading={loading} />
         <CategoriesTools {...{ categoryToolsDetails }} loading={loading} />
         <ExploreGptTools {...{ categoryToolsDetails }} loading={loading} />
