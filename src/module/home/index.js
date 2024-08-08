@@ -13,7 +13,7 @@ const Testimonial = lazy(() => import("./testimonial"));
 const Blog = lazy(() => import("./blog"));
 const Faqsection = lazy(() => import("./faqsection"));
 import { getHomePageAllDetails } from "@/store/ApiSlice/aiToolsSlice";
-export default function Homeindex({ seoData }) {
+export default function Homeindex() {
   const [loading, setLoading] = useState(true);
   const [categoryToolsDetails, setCategoryToolsDetails] = useState({});
   const dispatch = useDispatch();
@@ -38,7 +38,12 @@ export default function Homeindex({ seoData }) {
         <Herobanner />
         <CompanyImage />
         <CardSection {...{ categoryToolsDetails }} />
-        {ismobile > 600 && <Trendingaishortsvideo {...{ categoryToolsDetails }} loading={loading} />}
+        {ismobile > 600 && (
+          <Trendingaishortsvideo
+            {...{ categoryToolsDetails }}
+            loading={loading}
+          />
+        )}
         <Toolssection {...{ categoryToolsDetails }} loading={loading} />
         <CategoriesTools {...{ categoryToolsDetails }} loading={loading} />
         <ExploreGptTools {...{ categoryToolsDetails }} loading={loading} />
