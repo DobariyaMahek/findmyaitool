@@ -38,36 +38,4 @@ function App({ Component, pageProps, router, seoData }) {
   );
 }
 
-App.getInitialProps = async ({ Component, ctx, context }) => {
-  let seoData = {};
-
-  if (Component.getInitialProps) {
-    const pageProps = await Component.getInitialProps(ctx);
-    seoData = { ...seoData, ...pageProps.seoData };
-  }
-  const { pathname, query, res } = ctx;
-  let response = { Title: "FindmyTool" };
-
-  // Fetch SEO data from the server-side API
-  if (pathname == "/category/[slug]") {
-    response = await GET_CATEGORY_SEO(ctx.query.slug, res);
-  } else if (ctx.pathname == "/blog/[slug]") {
-    response = await GET_BLOG_SEO(ctx.query.slug, res);
-  } else if (ctx.pathname == "/authors/[slug]") {
-    response = await GET_AUTHOR_SEO(ctx.query.slug, res);
-  } else if (ctx.pathname == "/gpt/[slug]") {
-    response = await GET_GPT_SEO(ctx.query.slug, res);
-  } else if (ctx.pathname == "/gpt-category/[categorySulg]") {
-    response = await GET_GPTCATEGORY_SEO(ctx.query.categorySulg, res);
-  } else if (ctx.pathname == "/tool/[toolSlug]") {
-    response = await GET_TOOL_SEO(ctx.query.toolSlug, res);
-  } else {
-    response = await GET_SEO(ctx.pathname?.replace("/", "") || "home");
-  }
-
-  seoData = { ...seoData, ...response };
-
-  return { seoData };
-};
-
 export default App;
