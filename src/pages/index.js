@@ -3,7 +3,7 @@ export const runtime = "experimental-edge";
 export default function Home({ seoData }) {
   return (
     <>
-      <HomePage seoData={seoData} />
+      <h1>hello</h1>
     </>
   );
 }
