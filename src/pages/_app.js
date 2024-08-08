@@ -31,9 +31,7 @@ function App({ Component, pageProps, router, seoData }) {
   return (
     <>
       <MetaSEO seo={seoData} />
-      <Wrapper>
-        <Component {...pageProps} seoData={seoData} />
-      </Wrapper>
+      <Wrapper>{/* <Component {...pageProps} seoData={seoData} /> */}</Wrapper>
     </>
   );
 }
