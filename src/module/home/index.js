@@ -18,19 +18,19 @@ export default function Homeindex() {
   const [categoryToolsDetails, setCategoryToolsDetails] = useState({});
   const dispatch = useDispatch();
   const ismobile = window.innerWidth;
-  useEffect(() => {
-    dispatch(setCurrentPage(1));
-    dispatch(getHomePageAllDetails())
-      .then((respon) => {
-        setCategoryToolsDetails(respon?.payload?.payload);
-        setTimeout(() => {
-          setLoading(false);
-        }, 500);
-      })
-      .catch((err) => {
-        setLoading(false);
-      });
-  }, []);
+  // useEffect(() => {
+  //   dispatch(setCurrentPage(1));
+  //   dispatch(getHomePageAllDetails())
+  //     .then((respon) => {
+  //       setCategoryToolsDetails(respon?.payload?.payload);
+  //       setTimeout(() => {
+  //         setLoading(false);
+  //       }, 500);
+  //     })
+  //     .catch((err) => {
+  //       setLoading(false);
+  //     });
+  // }, []);
 
   return (
     <div className={styles.homePageAlignment}>

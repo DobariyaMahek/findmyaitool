@@ -24,7 +24,7 @@ export default function CardSection({ categoryToolsDetails }) {
       }, 100);
     }
   }, [categoryToolsDetails]);
-  const cardLoading = loader || homeloading;
+  const cardLoading = loader || homeloading || !finalDisplyArray?.length;
   return (
     <div className={styles.cardSectionAlignment}>
       <div className="container">
