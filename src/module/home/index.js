@@ -34,10 +34,10 @@ export default function Homeindex() {
 
   return (
     <div className={styles.homePageAlignment}>
-      <Suspense fallback={<div>Loading...</div>}>
+      {/* <Suspense fallback={<div>Loading...</div>}>
         <Herobanner />
         <CompanyImage />
-        {/* <CardSection {...{ categoryToolsDetails }} />
+        <CardSection {...{ categoryToolsDetails }} />
         {ismobile > 600 && (
           <Trendingaishortsvideo
             {...{ categoryToolsDetails }}
@@ -48,9 +48,10 @@ export default function Homeindex() {
         <CategoriesTools {...{ categoryToolsDetails }} loading={loading} />
         <ExploreGptTools {...{ categoryToolsDetails }} loading={loading} />
         <Testimonial />
-        <Blog /> */}
+        <Blog />
         <Faqsection />
-      </Suspense>
+      </Suspense> */}
+      <h1>Hello</h1>
     </div>
   );
 }
