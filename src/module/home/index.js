@@ -37,7 +37,7 @@ export default function Homeindex() {
       <Suspense fallback={<div>Loading...</div>}>
         <Herobanner />
         <CompanyImage />
-        <CardSection {...{ categoryToolsDetails }} />
+        {/* <CardSection {...{ categoryToolsDetails }} />
         {ismobile > 600 && (
           <Trendingaishortsvideo
             {...{ categoryToolsDetails }}
@@ -48,7 +48,7 @@ export default function Homeindex() {
         <CategoriesTools {...{ categoryToolsDetails }} loading={loading} />
         <ExploreGptTools {...{ categoryToolsDetails }} loading={loading} />
         <Testimonial />
-        <Blog />
+        <Blog /> */}
         <Faqsection />
       </Suspense>
     </div>
