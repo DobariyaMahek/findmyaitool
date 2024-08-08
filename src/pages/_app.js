@@ -29,7 +29,7 @@ function App({ Component, pageProps, router, seoData }) {
     document.documentElement.appendChild(style);
   }, []);
   return (
-    <>
+    <> 
       <MetaSEO seo={seoData} />
       <Wrapper>
         <Component {...pageProps} seoData={seoData} />
