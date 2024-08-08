@@ -46,5 +46,8 @@
     "slick-carousel": "^1.8.1",
     "suneditor": "^2.46.3",
     "suneditor-react": "^3.6.1"
+  },
+  "devDependencies": {
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }

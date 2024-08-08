@@ -1,15 +1,16 @@
-// @ts-check
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
-const nextConfig = {
-  // output: "export",
-  trailingSlash: true,
-  experimental: {
-    runtime: "experimental-edge",
-  },
-  productionBrowserSourceMaps: false,
-  images: {
-    unoptimized: true,
+module.exports = {
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.plugins.push(
+        new BundleAnalyzerPlugin({
+          analyzerMode: "static",
+          reportFilename: "./bundle-report.html",
+        })
+      );
+    }
+
+    return config;
   },
 };
-
-module.exports = nextConfig;
